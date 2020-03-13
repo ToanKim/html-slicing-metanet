@@ -8,20 +8,14 @@
 }
 
 html {
-    font-size: 125%;
+    font-size: 10px;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 600px) {
     html {
-        font-size: 80%;
+        font-size: 16px;
     }
 }
-
-/* @media only screen and (max-width: 768px) {
-    html {
-        font-size: 200%;
-    }
-} */
 
 a {
     text-decoration: none;
@@ -30,4 +24,16 @@ a {
 
 h1 {
     font-weight: normal;
+}
+
+.color--orange {
+    color: #FF473A;
+}
+
+.color--gray {
+    color: #979797;
+}
+
+.color--black {
+    color: #000;
 }

@@ -45,9 +45,30 @@ header {
 
 #main {
     transition: margin-left 0.5s;
-    padding: 16px;
+    /* padding: 16px; */
 }
 
 .option {
     display: flex;
+}
+
+#banner {
+    height: 25em;
+    margin-bottom: 1em;
+}
+
+.box__content {
+    margin: 1em;
+}
+
+.content__footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__section {
+    font-size: 1.2em;
+    width: 12em;
+    display: flex;
+    justify-content: space-between;
 }
