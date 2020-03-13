@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/home.css">
+    <script src="https://kit.fontawesome.com/78f1a0635b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div id="main">
+        <header>
+            <p id="name">THE ART MUSEUM</p>
+            <h1 id="title">Exhibition Preview</h1>
+            <img id="hamburger" src="../assets/images/open-menu.png" onclick="openNav()">
+        </header>
+    </div>
+    <div id="sidebar">
+        <ul>
+            <li>
+                <a href="#" class="option">
+                    <i class="far fa-calendar-alt"></i>
+                    <p>Exhibition & Events </p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="option">
+                    <img src="" alt="">
+                    <p>Artists & Artworks</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="option">
+                    <img src="" alt="">
+                    <p>Collections</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="option">
+                    <img src="" alt="">
+                    <p>Plan Your Visit</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="option">
+                    <img src="" alt="">
+                    <p>Become a Member</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="option">
+                    <img src="" alt="">
+                    <p>Shop</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById('sidebar').style.width = '24.21875em';
+            document.getElementById('main').style.width = 'calc(100% - 24.21875em)';
+        }
+    </script>
+</body>
+</html>

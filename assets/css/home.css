@@ -1,0 +1,53 @@
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#hamburger {
+    width: 24px;
+    height: 24px;
+    margin: 0.9375em;
+    cursor: pointer;
+}
+
+#title {
+    color: #FF473A;
+    font-size: 1.40625em;
+    margin: 0.9375em;
+}
+
+#name {
+    font-size: 0.78125em;
+    line-height: 0.9375em;
+    width: 3.90625em;
+    margin: 0.9375em;
+}
+
+#sidebar {
+    background-color: #FF473A;
+    color: #fff;
+
+    height: 100%;
+    width: 0;
+
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+#sidebar > p {
+    font-size: 1.40625em;
+}
+
+#main {
+    transition: margin-left 0.5s;
+    padding: 16px;
+}
+
+.option {
+    display: flex;
+}
