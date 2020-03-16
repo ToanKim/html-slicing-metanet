@@ -1,0 +1,145 @@
+/* FOR SLICK */
+
+.slider {
+    margin: 0 1em;
+}
+
+
+.slider ul li.slick-active button::before,
+.slider ul li button:hover::before {
+    color: #FF473A;
+}
+
+.slider ul li button::before {
+    font-size: 10px;
+}
+
+.slick-prev, .slick-next {
+    width: 100px;
+    height: 100px;
+}
+
+.slick-next {
+    right: -70px;
+}
+
+.slick-prev {
+    left: -70px;
+}
+
+.slick-prev::before, .slick-next::before {
+    font-size: 55px;
+    color: black;
+    z-index: 100;
+}
+
+@media only screen and (min-width: 600px) {
+    .slick-slide {
+        opacity: 0;
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .slick-slide.slick-current {
+        opacity: 1;
+    }
+
+    .slider .slick-slide > div {
+        width: fit-content;
+    }
+
+    /* .slick-slide img {
+        width: fit-content !important;
+    } */
+
+    .slider {
+        width: 30%;
+        margin: 0 auto;
+    }
+}
+
+/* NORMAL CSS */
+.content-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+h1.content__text {
+    font-size: 2.5em;
+}
+
+p.content__text {
+    font-size: 1.5em;
+    line-height: 25px;
+}
+
+.box__option {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 2em 0;
+}
+
+.option-quantity {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 20%;
+}
+
+.option-quantity button {
+    background: transparent;
+    border: 2px solid #979797;
+
+}
+
+.option-quantity div {
+    border: none;
+}
+
+.option-quantity button,
+.option-quantity div {
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    font-size: 2em;
+    padding: 0;
+}
+
+.content-detail p {
+    padding-right: 1em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.content__height--show {
+    height: 100%;
+}
+
+.content__height--hide {
+    height: 120px;
+}
+
+.flip {
+    transform: rotate(180deg);
+}
+
+@media only screen and (min-width: 600px) {
+    .content-detail {
+        width: 40%;
+        margin: 1em 0;
+    }
+
+    .box__option {
+        width: 40%;
+    }
+
+    .option-quantity button,
+    .option-quantity div {
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+    }
+}

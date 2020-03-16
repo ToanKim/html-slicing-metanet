@@ -10,6 +10,10 @@
     <script src="https://kit.fontawesome.com/78f1a0635b.js" crossorigin="anonymous"></script>
     <script src="../assets/js/jquery-3.4.1.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../assets/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../assets/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="../assets/css/shop.css">
+</head>
 </head>
 <body>
     <header>
@@ -79,7 +83,38 @@
 
     
     <div class="main">
-        
+        <div class="slider">
+            <img src="../assets/images/shop.png" alt="">
+            <img src="../assets/images/shop.png" alt="">
+            <img src="../assets/images/shop.png" alt="">
+        </div>
+        <div class="content">
+            <h1 class="color--black content__text">
+                Braun Classic Watch
+            </h1>
+            <div class="content-detail">
+                <p class="color--gray content__text content__height--hide">
+                    This Braun watch is a reissue of the original 1970's design from renowned design team Dietrich Lubs and Dieter Rams, both of whom have work featured in the Museum’s collection. The large watch features a numbered face, and the smaller watch has only index lines. Made of a matte stainless-steel case, black dial, mineral glass, a three-hand quartz movement, and a leather band. Water-resistant.
+                </p>
+                <i class="fas fa-arrow-down color--gray fa-2x" id="more"></i>
+            </div>
+
+            <div class="box__option">
+                <div class="option-price">
+                    <p class="color--black content__text">$160.00</p>
+                    <p class="color--gray content__text">$140.00 Member Price</p>
+                </div>
+                <div class="option-quantity">
+                    <button class="color--gray">-</button>
+                    <!-- <input type="number" readonly value="0" class="color--gray"> -->
+                    <div class="color--gray">0</div>
+                    <button class="color--gray">+</button>
+                </div>
+            </div>
+
+            <button class="button--orange">Add to Cart</button>
+        </div>
+
     </div>
 
     
@@ -87,10 +122,38 @@
 
 
     
-
+    <script src="../assets/slick-1.8.1/slick/slick.js"></script>
     <script>
+
+        $(document).ready(function () {
+            $('.slider').slick({
+                dots: true,
+                // centerMode: true,
+                centerPadding: '0px',
+                slidesToShow: 1,
+                responsive: [
+                    {
+                    breakpoint: 600,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '0px',
+                        slidesToShow: 1,
+                        dots: true
+                    }
+                    }
+                ]
+            })
+        })
         $('#hamburger').on('click', function(e) {
             $('html').toggleClass('sidebar--active');
+            e.preventDefault();
+        })
+
+        $('#more').on('click', function (e) {
+            $('.content-detail p').toggleClass('content__height--show');
+            $('.content-detail p').toggleClass('content__height--hide');
+            $('#more').toggleClass('flip');
             e.preventDefault();
         })
     </script>

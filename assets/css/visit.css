@@ -1,0 +1,156 @@
+.content .content-title {
+    margin: 0 1em;
+}
+
+.content .content-title h1 {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.content .content-title p {
+    font-size: 12px;
+    line-height: 15px;
+    width: 60%; 
+}
+
+.box__option {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 40px 0;
+}
+
+.option-quantity {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 20%;
+}
+
+.option-quantity button {
+    background: transparent;
+    border: 2px solid #979797;
+
+}
+
+.option-quantity div {
+    border: none;
+}
+
+.option-quantity button,
+.option-quantity div {
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    font-size: 2em;
+    padding: 0;
+}
+
+.option--active .option-quantity div {
+    color: black;
+    text-decoration: underline;
+}
+
+.color--black.content__text {
+    font-size: 2em;
+}
+
+.color--gray.content__text {
+    font-size: 1.2em;
+}
+
+.payment__box,
+.payment-total__box {
+    margin: 20px 1em 40px;
+}
+
+.payment__container {
+    margin: 20px 1em 50px;
+}
+
+.payment-total__box {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+    padding: 0 3em 0 1em;
+}
+
+.payment-date {
+    margin: 20px 0 70px;
+}
+
+.payment-date > p {
+    margin: 0 auto;
+}
+
+.date__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 10px 0;
+}
+
+.date__box p {
+    font-size: 18px;
+    line-height: 22px;
+    width: fit-content;
+}
+
+.date--active {
+    text-decoration: underline;
+    color: black;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #FF473A;
+}
+
+.line-break--orange {
+    border: 1px solid #FF473A;
+}
+
+.line-break--gray {
+    border-bottom: 1px solid #979797;
+}
+
+.date__text {
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+    .option-quantity button,
+    .option-quantity div {
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+    }
+
+    .content .content-title h1 {
+        font-size: 48px;
+        line-height: 50px;
+        text-align: center;
+    }
+    
+    .content .content-title p {
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .payment__container {
+        width: 50%;
+    }
+
+    .date__box p {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .date__text {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
