@@ -1,0 +1,108 @@
+/* FOR SLICK */
+
+.slider {
+    margin: 0 1em;
+}
+
+.slick-list {
+    padding: 25px 60px 30px !important;
+}
+
+.slick-center {
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  color: #e67e22;
+  transform: scale(1.2);
+}
+
+.slick-slide {
+    opacity: 0.5;
+}
+
+.slick-slide.slick-active {
+    opacity: 0.75;
+}
+
+.slick-slide.slick-center {
+    opacity: 1;
+    z-index: 100;
+}
+
+.slick-slide {
+    position: relative;
+}
+
+.slider ul li.slick-active button::before,
+.slider ul li button:hover::before {
+    color: #FF473A;
+
+}
+
+.slider ul li button::before {
+    font-size: 10px;
+
+}
+
+
+/* NORMAL CSS */
+.content__text {
+    margin: 0.5em 10px;
+}
+
+p.content__text {
+    font-size: 1.5em;
+    line-height: 25px;
+}
+
+h1.content__text {
+    font-size: 2.5em;
+    width: 7em;
+}
+
+h2.content__text {
+    font-size: 2em;
+}
+
+h6.content__text {
+    line-height: 15px;
+}
+
+
+.content__description {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.content__bio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 0;
+}
+
+#show {
+    margin-right: 0.25em;
+    cursor: pointer;
+}
+
+.flip {
+    transform: rotate(-180deg);
+}
+
+@media only screen and (min-width: 600px) {
+    h1.content__text {
+        width: 100%;
+        text-align: center;
+    }
+    
+    h6.content__text {
+        line-height: 18px;
+    }
+
+    #detail {
+        width: 50%;
+    }
+}

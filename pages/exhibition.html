@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibitions</title>
+    <link rel="stylesheet" href="../assets/css/reset.css"> 
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <script src="https://kit.fontawesome.com/78f1a0635b.js" crossorigin="anonymous"></script>
+    <script src="../assets/js/jquery-3.4.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../assets/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../assets/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="../assets/css/exhibition.css">
+</head>
+<body>
+    <header>
+        <img id="hamburger" src="../assets/images/open-menu.png">
+        <h1 id="title">Exhibitions Preview</h1>
+        <input type="text" placeholder="Search" id="search__bar">
+        <a href="home.html">
+            <p id="name">THE ART MUSEUM</p>
+        </a>
+    </header>
+
+    <div id="sidebar">
+        <ul>
+            <li>
+                <div>
+                    <i class="fas fa-search sidebar__icon"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+            </li>
+            <li>
+                <a href="exhibition.html" class="option">
+                    <i class="far fa-calendar-alt sidebar__icon"></i>
+                    <p>Exhibition & Events</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="option">
+                    <i class="fas fa-calendar-alt sidebar__icon"></i>
+                    <p>Artists & Artworks</p>
+                </a>
+            </li>
+            <li>
+                <a href="collection.html" class="option">
+                    <i class="fas fa-cube sidebar__icon"></i>
+                    <p>Collections</p>
+                </a>
+            </li>
+            <li>
+                <a href="visit.html" class="option">
+                    <i class="fas fa-ticket-alt sidebar__icon"></i>
+                    <p>Plan Your Visit</p>
+                </a>
+            </li>
+            <li>
+                <a href="member.html" class="option">
+                    <i class="fas fa-id-card sidebar__icon"></i>
+                    <p>Become a Member</p>
+                </a>
+            </li>
+            <li>
+                <a href="shop.html" class="option">
+                    <i class="fas fa-gift sidebar__icon"></i>
+                    <p>Shop</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <nav>
+        <a href="exhibition.html">Exhibitions & Events</a>
+        <a href="#">Artists & Artworks</a>
+        <a href="collection.html">Collections</a>
+        <a href="visit.html">Plan Your Visit</a>
+        <a href="member.html">Become a Member</a>
+        <a href="shop.html">Shop</a>
+    </nav>
+
+    
+    <div class="main">
+        <div class="content">
+            <p class="color--gray content__text">RETROSPECTIVE</p>
+            <h1 class="color--black content__text">DOROTHEA LANGE</h1>
+            <h2 class="color--orange content__text">OCTOBER 15 - MARCH 18</h2>
+            <p class="color--gray content__text">FLOOR 3</p>
+        </div>
+
+        <div class="slider">
+            <img src="../assets/images/slide1.png" alt="">
+            <img src="../assets/images/slide1.png" alt="">
+            <img src="../assets/images/slide1.png" alt="">
+            <img src="../assets/images/slide1.png" alt="">
+            <img src="../assets/images/slide1.png" alt="">
+            <img src="../assets/images/slide1.png" alt="">
+        </div>
+
+        <div class="content">
+            <h6 class="color--gray content__text content__description">“Abandoned Dust Bowl Home”<br>Gelatin silver print<br>about 1935 - 1940</h6>
+
+            <div class="content__bio">
+                <p class="color--gray content__text">BIOGRAPHY</p>
+                <i class="fas fa-chevron-down fa-2x color--gray" id="show"></i>
+            </div>
+
+            <p class="color--gray content__text" id="detail" style="display: none;">
+                Dorothea Lange (May 26, 1895 – October 11, 1965) was an influential American documentary photographer and photojournalist, best known for her Depression-era work for the Farm Security Administration (FSA). Lange's photographs humanized the consequences of the Great Depression and influenced the development of documentary photography. Born of second generation German immigrants on May 26, 1895, at 1041 Bloomfield Street, Hoboken, New Jersey,[1][2] Dorothea Lange was named Dorothea Margaretta Nutzhorn at birth. She dropped her middle name and assumed her mother's maiden name after her father abandoned the family when she was 12 years old, one of two traumatic incidents early in her life. The other was her contraction of polio at age seven which left her with a weakened right leg and a permanent limp.[1][2] "It formed me, guided me, instructed me, helped me and humiliated me," Lange once said of her altered gait. "I've never gotten over it, and I am aware of the force and power of it."[3]
+            </p>
+        </div>
+    </div>
+
+    
+
+
+
+    
+    
+    <script src="../assets/slick-1.8.1/slick/slick.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                dots: true,
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 5,
+                adaptiveHeight: true,
+                responsive: [
+                    {
+                    breakpoint: 600,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                    }
+                ]
+            })
+        })
+
+        $('#show').on('click', function (e) {
+            $('#detail').slideToggle("slow");
+            $('#show').toggleClass('flip');
+        })
+
+        $('#hamburger').on('click', function(e) {
+            $('html').toggleClass('sidebar--active');
+            e.preventDefault();
+        })
+    </script>
+</body>
+</html>

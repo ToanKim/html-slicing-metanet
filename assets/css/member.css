@@ -1,0 +1,64 @@
+.background {
+    position: relative;
+}
+
+.background img {
+    width: 100%;
+}
+
+.background p {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+
+    color: white;
+
+    font-size: 2.3em;
+}
+
+.main {
+    margin-top: 1em;
+}
+
+.main > p {
+    font-size: 1.2em;
+}
+
+.option__box {
+    margin: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.option__box .option__name {
+    font-size: 2em;
+}
+
+.option__box .option__description {
+    font-size: 1.2em;
+}
+
+@media only screen and (min-width: 600px) {
+    .background img {
+        display: block;
+        width: 40%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .background p {
+        position: absolute;
+        bottom: 15px;
+        /* left: 10em; */
+    
+        color: white;
+    
+        font-size: 2em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .option__container {
+        width: 45%;
+    }
+}
